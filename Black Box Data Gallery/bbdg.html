@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Data Gallery</title>
+		<style>
+			body
+			{
+				text-align:center;
+			}
+			
+			.thumb
+			{
+				width:12%;
+			}
+			
+			.arrow
+			{
+				width:8%;
+			}
+			
+			#mainimg
+			{
+				width:50%;
+			}
+			
+			#caption
+			{
+				font-size:24pt;
+				font-weight:bold;
+			}
+		</style>
+		
+		<script src = "itemdata.js"></script>
+		<script>
+			function initialize()
+			{
+				mainImage = document.getElementById("mainimg");
+				captionOutput = document.getElementById("caption");
+				infoOutput = document.getElementById("info");
+				itemThumbs = document.getElementsByClassName("thumb");
+				
+				document.getElementById("pagetitle").innerHTML = pageTitle;
+			}
+			
+			function buildData()
+			{
+			}
+			
+			function selectitem(idx)
+			{
+			}
+			
+			function moveOffset(mod)
+			{
+			}
+		
+			function setThumbnails()
+			{
+			}
+			
+			function display()
+			{
+			}
+		</script>
+	</head>
+		
+	<body onload = "initialize();">
+		<h1 id = "pagetitle"></h1>
+		<img id = "mainimg"  />
+		<div id = "caption"></div>
+		<div id = "info"></div>
+		<hr />
+		<img class = "arrow" src = "images/backward.png" />
+		<img class = "thumb" onclick = "selectitem(0);" />
+		<img class = "thumb" onclick = "selectitem(1);" />
+		<img class = "thumb" onclick = "selectitem(2);" />
+		<img class = "arrow" src = "images/forward.png" />
+	</body>
+</html>
